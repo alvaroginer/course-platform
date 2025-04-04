@@ -1,42 +1,150 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  /* ----> Colors */
+
+  /* Blue */
+  --color-blue: #1f83ff;
+  --color-blue-light: #4d9cff;
+  --color-blue-dark: #085fca;
+  --color-blue-strong-dark: #081425;
+  --color-blue-background: #152030;
+
+  /* Lila */
+  --color-lila: #5e2fd3;
+
+  /* White */
+  --color-white: white;
+
+  /* Gray */
+  --color-gray: #2c3644;
+
+  /* ----> Space */
+  --space-0: 0;
+  --space-2: 2px;
+  --space-5: 5px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-15: 15px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-30: 30px;
+  --space-42: 42px;
+  --space-52: 52px;
+  --space-55: 55px;
+  --space-60: 60px;
+  --space-80: 80px;
+  --space-300: 300px;
+
+  /* ----> Percentage */
+  --percentage-2: 0.2;
+
+  /* ----> Layouts */
+  --border-radius: var(--space-10);
+  --border-width: var(--space-2);
+
+  /* ----> Fonts & Typography*/
+
+  /* Weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+
+  /* Size */
+  --font-size-18: var(--space-18);
+  --font-size-30: var(--space-30);
+
+  /* Family */
+  --font-family-body: "Poppins", "sans-serif";
+
+  /* ----> */
+  --button-color-main: var(--color-blue);
+  --button-color-light: var(--color-blue-light);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-body);
+  background-color: var(--color-blue-strong-dark);
+  margin: var(--space-0);
+}
+
+img {
+  width: 100%;
+}
+
+/* Custom Clases */
+/* Display */
+.display__flex {
+  display: flex;
+}
+
+.align-items__center {
+  align-items: center;
+}
+
+.justify-content__center {
+  justify-content: center;
+}
+
+.justify-content__right {
+  justify-content: right;
+}
+
+.flex-direction__column {
+  flex-direction: column;
+}
+
+.gap__8px {
+  gap: var(--space-8);
+}
+
+/* Position */
+.position--relative {
+  position: relative;
+}
+
+.position--absolute {
+  position: absolute;
+}
+
+/* Height */
+.height--100vh {
+  height: calc(100vh - var(--space-55));
+}
+
+/* Width */
+.width-100 {
+  width: 100%;
+}
+
+/* Text-align */
+.text-align {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Margin */
+.margin--left__5 {
+  margin-left: var(--space-5);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.margin--right__5 {
+  margin-right: var(--space-5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Padding */
+.padding--52 {
+  padding: var(--space-52);
 }
 
-.card {
-  padding: 2em;
+/* Border-radius */
+.border-radius--20 {
+  border-radius: var(--space-20);
 }
 
-.read-the-docs {
-  color: #888;
+/* Background-color */
+
+.bg-color__white {
+  background-color: white;
 }

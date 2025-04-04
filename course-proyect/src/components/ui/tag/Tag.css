@@ -1,0 +1,29 @@
+.tag {
+  padding: var(--space-10);
+  display: flex;
+  align-items: center;
+  gap: var(--space-10);
+  background-color: var(--color-blue-background);
+  border-radius: var(--space-20);
+}
+
+.tag--image {
+  height: var(--space-60);
+  width: var(--space-60);
+  border-radius: var(--space-20);
+}
+
+.tag--text-container {
+  flex: 1;
+}
+
+.text-container__text {
+  line-height: 1.4;
+}
+
+.tag--icon {
+  width: var(--space-10);
+  height: var(--space-12);
+  padding: var(--space-15);
+  background-color: var(--color-gray);
+}

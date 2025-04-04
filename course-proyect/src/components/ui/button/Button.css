@@ -1,0 +1,64 @@
+/* Main button */
+.btn {
+  outline: none;
+  padding: 12px 52px;
+  border-radius: var(--space-10);
+  font-size: var(--space-18);
+  border-width: var(--space-2);
+  border-style: solid;
+  border-color: transparent;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: var(--color-blue-light);
+  }
+
+  &:active {
+    background-color: var(--color-blue-dark);
+  }
+
+  &:disabled {
+    opacity: var(--percentage-2);
+    cursor: not-allowed;
+  }
+}
+
+/* Secondary button */
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-blue);
+  border-width: var(--space-2);
+  border-color: currentColor;
+  border-style: solid;
+
+  &:hover {
+    color: var(--color-blue-light);
+    background-color: var(--color-white);
+  }
+
+  &:active {
+    color: var(--color-blue-dark);
+  }
+
+  &:disabled {
+    opacity: var(--percentage-2);
+    cursor: not-allowed;
+  }
+}
+
+.btn--disabled,
+[disabled] {
+  opacity: var(--percentage-2);
+  cursor: not-allowed;
+}
+
+.btn--no-border {
+  border: none;
+}
