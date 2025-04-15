@@ -1,6 +1,6 @@
 import "../../../App.css";
 import "./Button.css";
 
-export const Button = () => {
-  return <button className="btn">Add</button>;
+export const Button = ({ className, text }) => {
+  return <button className={className}>{text}</button>;
 };
